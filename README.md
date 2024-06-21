@@ -24,3 +24,5 @@ curl -X POST http://localhost:3000/submit -H "Content-Type: application/json" -d
 
 
 ## Tech stack
+1. express ejs. For html page template
+
