@@ -7,6 +7,8 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views'); // 指定视图文件夹路径
 
 app.use(express.json()); // 添加这一行来解析 JSON 请求体
+app.use(express.static(__dirname + '/public'));
+
 
 
 app.get('/', (req, res) => {
