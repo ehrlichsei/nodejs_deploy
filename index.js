@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello, Heroku!');
 });
 
+app.get('/api', (req, res) => {
+    res.send('test api!');
+  });
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
