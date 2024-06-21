@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser'); // 引入 body-parser 模块
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -8,6 +9,7 @@ app.set('views', __dirname + '/views'); // 指定视图文件夹路径
 
 app.use(express.json()); // 添加这一行来解析 JSON 请求体
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
